@@ -12,20 +12,20 @@ def player_number() -> int:
 
 def check_number(computer, player):
     if player < computer:
-        return 'LOW'
+        return "LOW"
     elif player > computer:
-        return 'HIGH'
-    return 'WIN'
+        return "HIGH"
+    return "WIN"
 
 
 def main():
     comps_num = pick_number()
     users_num = player_number()
     num_status = check_number(comps_num, users_num)
-    print(f'Your Guess: {num_status}')
+    print(f"Your Guess: {num_status}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import sys
 
     sys.exit(main())
